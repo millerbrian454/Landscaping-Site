@@ -16,18 +16,7 @@
 <div id="page-start-anchor"></div>
 
 <!-- header start -->
-{% set bottomNavbarItems = [
-    {text: 'About', href: '#about', smoothScroll: true},
-    {text: 'Services', href: '#services', smoothScroll: true},
-    {text: 'Why choose us', href: '#why-choose-us', smoothScroll: true},
-    {text: 'Our work', href: '#our-work', smoothScroll: true},
-    {text: 'Testimonials', href: '#testimonials', smoothScroll: true},
-    {text: 'Contacts', href: '#contacts', smoothScroll: true},
-] %}
-{% include 'includes/header.html' with {
-    topNavbarText: true,
-    headerClasses: 'header-fixed-xl'
-} %}
+{% include 'includes/header.html' with {ctaButton: {text: 'Request Quote', href: '#'}} %}
 <!-- header end -->
 
 <!-- main hero start -->
