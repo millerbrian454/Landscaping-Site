@@ -16,19 +16,7 @@
 <div id="page-start-anchor"></div>
 
 <!-- header start -->
-{% set bottomNavbarItems = [
-    {text: 'About', href: '#about', smoothScroll: true},
-    {text: 'Services', href: '#services', smoothScroll: true},
-    {text: 'Testimonials', href: '#testimonials', smoothScroll: true},
-    {text: 'FAQ', href: '#faq', smoothScroll: true},
-    {text: 'Vouchers', href: '#vouchers', smoothScroll: true},
-    {text: 'Contacts', href: '#contacts', smoothScroll: true},
-] %}
-{% include 'includes/header.html' with {
-    topNavbarText: true,
-    ctaButton: {text: 'Book now', href: 'booking.html', target: '_self'},
-    headerClasses: 'header-fixed-xl'
-} %}
+{% include 'includes/header.html' with {ctaButton: {text: 'Request Quote', href: '#'}} %}
 <!-- header end -->
 
 <!-- main hero start -->
