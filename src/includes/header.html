@@ -1,7 +1,7 @@
 {# default values are defined here #}
 
 {% if topNavbarItems == undefined %}
-    {% set topNavbarItems = [
+{% set topNavbarItems = [
         {text: 'Landings', dropdown: [
             {text: 'Browse all', href: 'index.html'},
             {text: 'Massage', href: 'therapist.html'},
@@ -22,7 +22,7 @@
 {% endif %}
 
 {% if bottomNavbarItems == undefined %}
-    {% set bottomNavbarItems = [
+{% set bottomNavbarItems = [
         {text: 'Services', href: 'services.html'},
         {text: 'Gallery', href: 'gallery.html'},
         {text: 'Testimonials', href: 'testimonials.html'},
@@ -32,78 +32,54 @@
 {% endif %}
 
 <section class="header {{ headerClasses }}">
-    <!-- <div class="header-top-line bg-primary">
-        <div class="container">
-            <div class="row">
-                <nav class="navbar navbar-expand navbar-dark navbar-short justify-content-between w-100">
-                    <ul class="navbar-nav">
-                        {% for item in topNavbarItems %}
-                        <li class="nav-item {{ item.dropdown ? 'dropdown dropdown-flat dropdown-flat-primary' : '' }}">
-                            {% if item.dropdown %}
-                            <a class="nav-link text-white dropdown-toggle" href="#" data-toggle="dropdown">
-                                <span class="text-uppercase">{{ item.text }}</span>
-                            </a>
-                            <div class="dropdown-menu">
-                                {% for subitem in item.dropdown %}
-                                <a class="dropdown-item" href="{{ subitem.href }}">{{ subitem.text }}</a>
-                                {% endfor %}
-                            </div>
-                            {% else %}
-                            <a class="nav-link text-white" href="{{ item.href }}">
-                                <span class="text-uppercase">{{ item.text }}</span>
-                            </a>
-                            {% endif %}
-                        </li>
-                        {% endfor %}
-                    </ul>
-                    {% if topNavbarText %}
-                    <span class="navbar-text text-uppercase d-flex align-items-center">
-                        <span class="text-white-70 mr-1">Call us today:</span>
-                        <span class="text-white mr-1">123-456-7890</span>
-                        <i class="material-icons fs-1">phone</i>
-                    </span>
-                    {% endif %}
-                </nav>
-            </div>
-        </div>
-    </div> -->
-    <div class="header-main bg-white">
-        <div class="container">
-            <div class="row">
-                <nav class="navbar navbar-expand-lg navbar-light w-100" id="header-navbar">
-                    <a class="navbar-brand font-weight-bold" href="index.html">Everything You Can't</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ml-auto">
-                            {% for item in bottomNavbarItems %}
-                            <li class="nav-item">
-                                <a class="nav-link text-uppercase {{ item.active ? 'active' : '' }}"
-                                   data-toggle="{{ item.smoothScroll ? 'smooth-scroll' : 'none' }}"
-                                   href="{{ item.href }}">
-                                    {{ item.text }}
-                                    {% if item.active %}
-                                    <span class="sr-only">(current)</span>
-                                    {% endif %}
-                                </a>
-                            </li>
-                            {% endfor %}
-                        </ul>
-                        {% if ctaButton %}
-                        <div class="navbar-spacer"></div>
-                        <a class="btn btn-outline-primary text-nowrap"
-                           href="{{ ctaButton.href }}"
-                           data-toggle="{{ ctaButton.smoothScroll ? 'smooth-scroll' : 'none' }}"
-                           target="{% if ctaButton.target %}{{ ctaButton.target }}{% else %}_blank{% endif %}">
-                            {{ ctaButton.text }}
-                        </a>
-                        {% endif %}
-                    </div>
-                </nav>
-            </div>
-        </div>
+  <div class="header-top-line bg-primary">
+    <div class="container">
+      <div class="row">
+        <nav class="navbar navbar-expand navbar-dark navbar-short justify-content-between w-100">
+          {% if topNavbarText %}
+          <span class="navbar-text text-uppercase d-flex align-items-left">
+            <span class="text-white-120 mr-1">Everything You Can't Landscaping</span>
+          </span>
+          <span class="navbar-text text-uppercase d-flex align-items-center">
+            <span class="text-white-70 mr-1">Call us today:</span>
+            <span class="text-white mr-1">(860)-819-9168</span>
+            <i class="material-icons fs-1">phone</i>
+          </span>
+          {% endif %}
+        </nav>
+      </div>
     </div>
+  </div>
+  <div class="header-main bg-white">
+    <div class="container">
+      <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-light w-100" id="header-navbar">
+          <a class="navbar-brand font-weight-bold" href="index.html">Everything You Can't</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              {% for item in bottomNavbarItems %}
+              <li class="nav-item">
+                <a class="nav-link text-uppercase {{ item.active ? 'active' : '' }}" data-toggle="{{ item.smoothScroll ? 'smooth-scroll' : 'none' }}" href="{{ item.href }}">
+                  {{ item.text }}
+                  {% if item.active %}
+                  <span class="sr-only">(current)</span>
+                  {% endif %}
+                </a>
+              </li>
+              {% endfor %}
+            </ul>
+            {% if ctaButton %}
+            <div class="navbar-spacer"></div>
+            <a class="btn btn-outline-primary text-nowrap" href="{{ ctaButton.href }}" data-toggle="{{ ctaButton.smoothScroll ? 'smooth-scroll' : 'none' }}" target="{% if ctaButton.target %}{{ ctaButton.target }}{% else %}_blank{% endif %}">
+              {{ ctaButton.text }}
+            </a>
+            {% endif %}
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
 </section>
