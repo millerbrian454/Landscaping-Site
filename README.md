@@ -1,3 +1,6 @@
+This code was purchased from https://themes.getbootstrap.com/product/profi-bootstrap-landing-pages-for-small-business/ this repo is for me to track the changes I make while building a website with the theme.
+
+
 # PROFI Bootstrap Template
 This guide will help you get started with PROFI! All the important stuff – compiling the source, file structure, build tools, file includes – is documented here, but should you have any questions, always feel free to reach out to [support@htmlhunters.com](mailto:support@htmlhunters.com).
 
