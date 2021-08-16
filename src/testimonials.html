@@ -1,183 +1,356 @@
 <!doctype html>
 <html class="no-js" lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>PROFI</title>
+  <title>PROFI</title>
 
-    <link rel="stylesheet" href="assets/css/vendor.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/fonts/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" href="assets/css/vendor.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/fonts/font-awesome/css/font-awesome.css">
 </head>
+
 <body data-spy="scroll" data-target="#header-navbar" data-offset="140">
 
-<div id="page-start-anchor"></div>
+  <div id="page-start-anchor"></div>
 
-<!-- header start -->
-{% include 'includes/header.html' with {ctaButton: {text: 'Request Quote', href: '#'}} %}
-<!-- header end -->
+  <!-- header start -->
+  {% include 'includes/header.html' with {ctaButton: {text: 'Request Quote', href: '#'}} %}
+  <!-- header end -->
 
-<!-- main hero start -->
-<section class="hero hero-fullscreen jarallax" data-speed="0.2" style="min-height: calc(100vh - 140px)">
+  <!-- main hero start -->
+  <section class="hero hero-fullscreen jarallax" data-speed="0.2" style="min-height: calc(100vh - 140px)">
     <div class="hero-background">
-        <img src="assets/images/image-29.jpg" alt="hero background" class="jarallax-img"/>
-        <div class="hero-background-overlay" style="background-color: rgba(0,0,0,.25)"></div>
+      <img src="assets/images/image-29.jpg" alt="hero background" class="jarallax-img" />
+      <div class="hero-background-overlay" style="background-color: rgba(0,0,0,.25)"></div>
     </div>
     <div class="hero-foreground hero-foreground-gradient-black-left d-flex flex-column justify-content-center justify-content-md-end">
-        <div class="container text-white py-14 py-md-23 py-lg-25 text-center text-md-left">
-            <small class="fs-2 font-family-secondary text-uppercase font-weight-bold letter-spacing-caption">
-                See what our customers think!
-            </small>
-            <h1 class="fs-10 fs-lg-11 font-weight-bold mt-10 mb-16">
-                Testimonials and<br/>Reviews
-            </h1>
-            <div class="d-flex flex-wrap justify-content-center justify-content-md-start">
-                <a href="#" class="btn btn-primary btn-lg">View on Google</a>
-                <a href="#" class="btn btn-ghost btn-lg border-0">View on Yelp</a>
-            </div>
+      <div class="container text-white py-14 py-md-23 py-lg-25 text-center text-md-left">
+        <small class="fs-2 font-family-secondary text-uppercase font-weight-bold letter-spacing-caption">
+          See what our customers think!
+        </small>
+        <h1 class="fs-10 fs-lg-11 font-weight-bold mt-10 mb-16">
+          Testimonials and<br />Reviews
+        </h1>
+        <div class="d-flex flex-wrap justify-content-center justify-content-md-start">
+          <a href="#" class="btn btn-primary btn-lg">View on Google</a>
+          <a href="#" class="btn btn-ghost btn-lg border-0">View on Yelp</a>
         </div>
+      </div>
     </div>
-</section>
-<div id="hero-end-anchor"></div>
-<!-- main hero end -->
+  </section>
+  <div id="hero-end-anchor"></div>
+  <!-- main hero end -->
 
 
-<!-- "testimonials" section start -->
-<section class="section" id="testimonials">
+  <!-- "testimonials" section start -->
+  <section class="section" id="testimonials">
     <div class="section-content container">
-        <div class="d-flex justify-content-center justify-content-sm-between align-items-center">
-            <div class="text-center text-sm-left">
-                <small class="fs-1 font-family-secondary text-uppercase font-weight-bold letter-spacing-caption text-muted">
-                    Some reviews from our clients
-                </small>
-                <h1>Testimonials</h1>
-            </div>
-            <div class="d-none d-sm-block">
-                <div class="btn-group">
-                    <button type="button" class="btn btn-light btn-square" data-toggle="card-slider"
-                            data-target="#testimonials-slider" data-action="prevSlide">
-                        <i class="material-icons">arrow_left</i>
-                    </button>
-                    <button type="button" class="btn btn-light btn-square" data-toggle="card-slider"
-                            data-target="#testimonials-slider" data-action="nextSlide">
-                        <i class="material-icons">arrow_right</i>
-                    </button>
-                </div>
-            </div>
+      <div class="d-flex justify-content-center justify-content-sm-between align-items-center">
+        <div class="text-center text-sm-left">
+          <small class="fs-1 font-family-secondary text-uppercase font-weight-bold letter-spacing-caption text-muted">
+            Some reviews from our clients
+          </small>
+          <h1>Testimonials</h1>
         </div>
-        <div class="card-slider card-slider-viewport card-slider-services mt-15" id="testimonials-slider">
-            <article class="card-slider-item">
-                <div class="card border-light card-accent-left" data-mh="testimonials-slider">
-                    <div class="card-body p-19 p-md-20 d-flex flex-column">
-                        <div class="d-flex align-items-center">
-                            <img src="assets/images/yelp.svg" alt="yelp icon" width="45" class="rounded-circle"/>
-                            <div class="ml-9">
-                                <div class="text-black font-weight-medium fs-5 lh-5 mb-4">Pamela P.</div>
-                                <div class="text-muted fs-3 lh-4">Bathroom remodeling</div>
-                            </div>
-                        </div>
-                        <blockquote class="my-14">
-                            <p>“Rhoncus netus et tincidunt nunc pharetra rutrum natoque, libero justo enim magnis sapien
-                                finibus quisque dis, habitant quam ipsum luctus nisi posuere.”</p>
-                        </blockquote>
-                        <div class="star-rating">
-                            <i class="material-icons">star</i>
-                            <i class="material-icons">star</i>
-                            <i class="material-icons">star</i>
-                            <i class="material-icons">star</i>
-                            <i class="material-icons">star_half</i>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article class="card-slider-item">
-                <div class="card border-light card-accent-left" data-mh="testimonials-slider">
-                    <div class="card-body p-19 p-md-20 d-flex flex-column">
-                        <div class="d-flex align-items-center">
-                            <img src="assets/images/houzz.svg" alt="houzz icon" width="45" class="rounded-circle"/>
-                            <div class="ml-9">
-                                <div class="text-black font-weight-medium fs-5 lh-5 mb-4">Tammara</div>
-                                <div class="text-muted fs-3 lh-4">Kitchen remodeling</div>
-                            </div>
-                        </div>
-                        <blockquote class="my-14">
-                            <p>“Feugiat condimentum lorem congue id dictum aenean nascetur varius tortor, euismod nec
-                                parturient ullamcorper inceptos bibendum pellentesque quisque.”</p>
-                        </blockquote>
-                        <div class="star-rating mt-auto">
-                            <i class="material-icons">star</i>
-                            <i class="material-icons">star</i>
-                            <i class="material-icons">star</i>
-                            <i class="material-icons">star</i>
-                            <i class="material-icons">star_border</i>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article class="card-slider-item">
-                <div class="card border-light card-accent-left" data-mh="testimonials-slider">
-                    <div class="card-body p-19 p-md-20 d-flex flex-column">
-                        <div class="d-flex align-items-center">
-                            <img src="assets/images/fb.svg" alt="facebook icon" width="45" class="rounded-circle"/>
-                            <div class="ml-9">
-                                <div class="text-black font-weight-medium fs-5 lh-5 mb-4">David J.</div>
-                                <div class="text-muted fs-3 lh-4">Roofing</div>
-                            </div>
-                        </div>
-                        <blockquote class="my-14">
-                            <p>“Vel volutpat elit est dignissim diam viverra quis id, placerat et maecenas nulla nec
-                                nullam
-                                iaculis adipiscing felis, ac vivamus eleifend ridiculus massa auctor convallis.”</p>
-                        </blockquote>
-                        <div class="star-rating mt-auto">
-                            <i class="material-icons">star</i>
-                            <i class="material-icons">star</i>
-                            <i class="material-icons">star</i>
-                            <i class="material-icons">star</i>
-                            <i class="material-icons">star</i>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article class="card-slider-item">
-                <div class="card border-light card-accent-left" data-mh="testimonials-slider">
-                    <div class="card-body p-19 p-md-20 d-flex flex-column">
-                        <div class="d-flex align-items-center">
-                            <img src="assets/images/g.svg" alt="google icon" width="45" class="rounded-circle"/>
-                            <div class="ml-9">
-                                <div class="text-black font-weight-medium fs-5 lh-5 mb-4">James B.</div>
-                                <div class="text-muted fs-3 lh-4">Painting</div>
-                            </div>
-                        </div>
-                        <blockquote class="my-14">
-                            <p>“Parturient hendrerit pharetra ridiculus eleifend dictumst aenean facilisi, varius etiam
-                                consequat tempor vivamus lorem suspendisse laoreet, ullamcorper sem volutpat orci tellus
-                                erat.”</p>
-                        </blockquote>
-                        <div class="star-rating mt-auto">
-                            <i class="material-icons">star</i>
-                            <i class="material-icons">star</i>
-                            <i class="material-icons">star</i>
-                            <i class="material-icons">star_half</i>
-                            <i class="material-icons">star_border</i>
-                        </div>
-                    </div>
-                </div>
-            </article>
+        <div class="d-none d-sm-block">
+          <div class="btn-group">
+            <button type="button" class="btn btn-light btn-square" data-toggle="card-slider" data-target="#testimonials-slider" data-action="prevSlide">
+              <i class="material-icons">arrow_left</i>
+            </button>
+            <button type="button" class="btn btn-light btn-square" data-toggle="card-slider" data-target="#testimonials-slider" data-action="nextSlide">
+              <i class="material-icons">arrow_right</i>
+            </button>
+          </div>
         </div>
+      </div>
+      <div class="card-slider card-slider-viewport card-slider-services mt-15" id="testimonials-slider">
+        <article class="card-slider-item">
+          <div class="card border-light card-accent-left" data-mh="testimonials-slider">
+            <div class="card-body p-19 p-md-20 d-flex flex-column">
+              <div class="d-flex align-items-center">
+                <img src="assets/images/yelp.svg" alt="yelp icon" width="45" class="rounded-circle" />
+                <div class="ml-9">
+                  <div class="text-black font-weight-medium fs-5 lh-5 mb-4">Pamela P.</div>
+                  <div class="text-muted fs-3 lh-4">Bathroom remodeling</div>
+                </div>
+              </div>
+              <blockquote class="my-14">
+                <p>“Rhoncus netus et tincidunt nunc pharetra rutrum natoque, libero justo enim magnis sapien
+                  finibus quisque dis, habitant quam ipsum luctus nisi posuere.”</p>
+              </blockquote>
+              <div class="star-rating">
+                <i class="material-icons">star</i>
+                <i class="material-icons">star</i>
+                <i class="material-icons">star</i>
+                <i class="material-icons">star</i>
+                <i class="material-icons">star_half</i>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="card-slider-item">
+          <div class="card border-light card-accent-left" data-mh="testimonials-slider">
+            <div class="card-body p-19 p-md-20 d-flex flex-column">
+              <div class="d-flex align-items-center">
+                <img src="assets/images/houzz.svg" alt="houzz icon" width="45" class="rounded-circle" />
+                <div class="ml-9">
+                  <div class="text-black font-weight-medium fs-5 lh-5 mb-4">Tammara</div>
+                  <div class="text-muted fs-3 lh-4">Kitchen remodeling</div>
+                </div>
+              </div>
+              <blockquote class="my-14">
+                <p>“Feugiat condimentum lorem congue id dictum aenean nascetur varius tortor, euismod nec
+                  parturient ullamcorper inceptos bibendum pellentesque quisque.”</p>
+              </blockquote>
+              <div class="star-rating mt-auto">
+                <i class="material-icons">star</i>
+                <i class="material-icons">star</i>
+                <i class="material-icons">star</i>
+                <i class="material-icons">star</i>
+                <i class="material-icons">star_border</i>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="card-slider-item">
+          <div class="card border-light card-accent-left" data-mh="testimonials-slider">
+            <div class="card-body p-19 p-md-20 d-flex flex-column">
+              <div class="d-flex align-items-center">
+                <img src="assets/images/fb.svg" alt="facebook icon" width="45" class="rounded-circle" />
+                <div class="ml-9">
+                  <div class="text-black font-weight-medium fs-5 lh-5 mb-4">David J.</div>
+                  <div class="text-muted fs-3 lh-4">Roofing</div>
+                </div>
+              </div>
+              <blockquote class="my-14">
+                <p>“Vel volutpat elit est dignissim diam viverra quis id, placerat et maecenas nulla nec
+                  nullam
+                  iaculis adipiscing felis, ac vivamus eleifend ridiculus massa auctor convallis.”</p>
+              </blockquote>
+              <div class="star-rating mt-auto">
+                <i class="material-icons">star</i>
+                <i class="material-icons">star</i>
+                <i class="material-icons">star</i>
+                <i class="material-icons">star</i>
+                <i class="material-icons">star</i>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="card-slider-item">
+          <div class="card border-light card-accent-left" data-mh="testimonials-slider">
+            <div class="card-body p-19 p-md-20 d-flex flex-column">
+              <div class="d-flex align-items-center">
+                <img src="assets/images/g.svg" alt="google icon" width="45" class="rounded-circle" />
+                <div class="ml-9">
+                  <div class="text-black font-weight-medium fs-5 lh-5 mb-4">James B.</div>
+                  <div class="text-muted fs-3 lh-4">Painting</div>
+                </div>
+              </div>
+              <blockquote class="my-14">
+                <p>“Parturient hendrerit pharetra ridiculus eleifend dictumst aenean facilisi, varius etiam
+                  consequat tempor vivamus lorem suspendisse laoreet, ullamcorper sem volutpat orci tellus
+                  erat.”</p>
+              </blockquote>
+              <div class="star-rating mt-auto">
+                <i class="material-icons">star</i>
+                <i class="material-icons">star</i>
+                <i class="material-icons">star</i>
+                <i class="material-icons">star_half</i>
+                <i class="material-icons">star_border</i>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
     </div>
-</section>
-<!-- "testimonials" section end -->
+  </section>
+  <!-- "testimonials" section end -->
 
 
-<!-- footer start -->
-{% include 'includes/footer.html' %}
-<!-- footer end -->
 
-<script src="assets/js/vendor.js"></script>
-<script src="assets/js/polyfills.js"></script>
-<script src="assets/js/app.js"></script>
+  <!-- "case results" section start -->
+  <section class="section bg-secondary" id="cases">
+    <div class="section-content container text-center">
+      <small class="fs-1 font-family-secondary text-uppercase font-weight-bold letter-spacing-caption text-muted">
+        Cases that we win
+      </small>
+      <h1>Case Results</h1>
+    </div>
+
+    <div class="section-content container mt-17">
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <div class="card border-0">
+            <div class="card-body p-19 p-md-20">
+              <div class="price font-weight-bold">
+                <div class="price-currency">$</div>
+                <div class="price-value">476</div>
+                <div class="price-description font-weight-normal">million</div>
+              </div>
+              <div class="ribbon ribbon-left ribbon-info ribbon-float-top-right mt-9 px-13">New</div>
+              <hr class="my-11">
+              <p>Profi has secured a landmark MTBE settlement against some
+                of the country’s biggest oil companies, which have agreed to pay $476 million in a suit
+                involving the contamination of 153 public water systems nationally.</p>
+              <div class="mt-11">
+                <a href="#" class="btn btn-link">Learn more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 mt-14 mt-lg-0">
+          <div class="card border-0">
+            <div class="card-body p-19 p-md-20">
+              <div class="price font-weight-bold">
+                <div class="price-currency">$</div>
+                <div class="price-value">476</div>
+                <div class="price-description font-weight-normal">million</div>
+              </div>
+              <hr class="my-11">
+              <p>Profi has secured a landmark MTBE settlement against some
+                of the country’s biggest oil companies, which have agreed to pay $476 million in a suit
+                involving the contamination of 153 public water systems nationally.</p>
+              <div class="mt-11">
+                <a href="#" class="btn btn-link">Learn more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- "case results" section end -->
+
+  <!-- "quote" section start -->
+  <section class="section">
+    <div class="section-content container">
+      <div class="big-quote">
+        <div class="big-quote-icon mb-12 mb-md-15 mb-lg-19">
+          <i class="material-icons">format_quote</i>
+        </div>
+        <blockquote class="big-quote-contents">
+          <p class="mb-0 fs-6 fs-md-9">If there were no bad people, there would be no good lawyers.</p>
+          <footer class="big-quote-footer mt-11 mt-md-14 mt-lg-18">Charles Dickens</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+  <!-- "quote" section end -->
+
+  <!-- "testimonials" section start -->
+  <section class="section jarallax text-white" data-jarallax data-speed="0.2" id="testimonials">
+    <img class="section-background-image jarallax-img" src="assets/images/image-8.jpg" alt="background image" />
+    <div class="section-background-color" style="background-color: rgba(0, 0, 0, 0.5)"></div>
+    <div class="section-content container text-center">
+      <h1>Testimonials</h1>
+    </div>
+    <div class="section-content container mt-10 mt-md-19 pt-2">
+      <div class="card-slider card-slider-testimonials" id="card-slider-2" data-slides-visible="2">
+        <article class="card-slider-item">
+          <div class="card card-ghost text-center">
+            <div class="card-body p-19 p-md-20">
+              <p class="mb-11">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <div class="mt-auto">
+                <img src="assets/images/avatar-1.jpg" alt="avatar 4" width="50" class="rounded-circle" />
+                <h1 class="fs-5 lh-5 mb-2 mt-9">David</h1>
+                <p class="fs-3 lh-4 text-muted">CEO at Company #1</p>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="card-slider-item">
+          <div class="card card-ghost text-center">
+            <div class="card-body p-19 p-md-20">
+              <p class="mb-11">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <div class="mt-auto">
+                <img src="assets/images/avatar-1.jpg" alt="avatar 4" width="50" class="rounded-circle" />
+                <h1 class="fs-5 lh-5 mb-2 mt-9">John</h1>
+                <p class="fs-3 lh-4 text-muted">CEO at Company #1</p>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="card-slider-item">
+          <div class="card card-ghost text-center">
+            <div class="card-body p-19 p-md-20">
+              <p class="mb-11">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <div class="mt-auto">
+                <img src="assets/images/avatar-1.jpg" alt="avatar 4" width="50" class="rounded-circle" />
+                <h1 class="fs-5 lh-5 mb-2 mt-9">Nick</h1>
+                <p class="fs-3 lh-4 text-muted">CEO at Company #1</p>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="card-slider-item">
+          <div class="card card-ghost text-center">
+            <div class="card-body p-19 p-md-20">
+              <p class="mb-11">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <div class="mt-auto">
+                <img src="assets/images/avatar-1.jpg" alt="avatar 4" width="50" class="rounded-circle" />
+                <h1 class="fs-5 lh-5 mb-2 mt-9">Henry</h1>
+                <p class="fs-3 lh-4 text-muted">CEO at Company #1</p>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="card-slider-item">
+          <div class="card card-ghost text-center">
+            <div class="card-body p-19 p-md-20">
+              <p class="mb-11">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <div class="mt-auto">
+                <img src="assets/images/avatar-1.jpg" alt="avatar 4" width="50" class="rounded-circle" />
+                <h1 class="fs-5 lh-5 mb-2 mt-9">Jacob</h1>
+                <p class="fs-3 lh-4 text-muted">CEO at Company #1</p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+    <div class="section-content container mt-10 mt-md-19 pt-2 d-none d-sm-block">
+      <div class="d-flex justify-content-between align-items-center">
+        <button type="button" class="btn btn-ghost btn-square" data-toggle="card-slider" data-target="#card-slider-2" data-action="prevSlide">
+          <i class="material-icons">arrow_left</i>
+        </button>
+
+        <div data-control="card-slider-dots" data-target="#card-slider-2"></div>
+
+        <button type="button" class="btn btn-ghost btn-square" data-toggle="card-slider" data-target="#card-slider-2" data-action="nextSlide">
+          <i class="material-icons">arrow_right</i>
+        </button>
+      </div>
+    </div>
+  </section>
+  <!-- "testimonials" section end -->
+
+  <!-- footer start -->
+  {% include 'includes/footer.html' %}
+  <!-- footer end -->
+
+  <script src="assets/js/vendor.js"></script>
+  <script src="assets/js/polyfills.js"></script>
+  <script src="assets/js/app.js"></script>
 </body>
+
 </html>
