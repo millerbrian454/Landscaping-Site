@@ -19,6 +19,7 @@
     position: relative;
     border: 0;
     @include border-radius(0, true);
+    margin-top: 2%;
 
     // we need higher specificity here so I used [class]
     &, &:active[class], &:focus[class] {
