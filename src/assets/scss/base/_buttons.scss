@@ -5,6 +5,7 @@
 .btn {
   letter-spacing: $letter-spacing;
   text-transform: uppercase;
+  margin: 2%;
 }
 
 // square modifications
@@ -20,6 +21,7 @@
   line-height: rem(60 - $btn-border-width * 2);
   height: rem(60);
   width: rem(60);
+  margin: 2%;
 }
 
 .btn-sm.btn-square {
