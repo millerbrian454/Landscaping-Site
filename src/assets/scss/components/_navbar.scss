@@ -83,8 +83,9 @@
 
         .nav-link.active:before,
         .nav-item.active .nav-link:before,
-        .nav-link:hover:before {
-          background-color: $primary;
+        .nav-link:hover:before,
+        .nav-link:hover {
+          color: #ad3d00!important;
         }
       }
     }
