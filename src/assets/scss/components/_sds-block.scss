@@ -37,7 +37,7 @@
 .sds-block-foreground {
   position: relative;
   z-index: 10;
-  background: $white;
+  background: $blockcolor;
   width: 45%;
   padding: map_get($spacers, 21) map_get($spacers, 16) map_get($spacers, 21) map_get($spacers, 22);
 
