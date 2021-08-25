@@ -13,6 +13,10 @@
   text-transform: uppercase;
   margin: 2% !important;
   background-color: $gblue !important;
+
+  &:hover{
+    background-color: #4285F4
+  }
 }
 // square modifications
 .btn-square {
