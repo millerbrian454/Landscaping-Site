@@ -7,6 +7,13 @@
   text-transform: uppercase;
   margin: 2% !important;
 }
+
+.btn-gblue {
+  letter-spacing: $letter-spacing;
+  text-transform: uppercase;
+  margin: 2% !important;
+  background-color: $gblue !important;
+}
 // square modifications
 .btn-square {
   padding: 0;
