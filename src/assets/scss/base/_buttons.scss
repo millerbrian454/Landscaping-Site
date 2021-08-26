@@ -18,6 +18,17 @@
 .btn-gblue:hover {
   background-color: #4285F4;
 }
+
+.btn-yred {
+  letter-spacing: $letter-spacing;
+  text-transform: uppercase;
+  margin: 2% !important;
+  background-color: $yred;
+}
+
+.btn-yred:hover {
+  background-color: #cc0000;
+}
 // square modifications
 
 .btn-square {
