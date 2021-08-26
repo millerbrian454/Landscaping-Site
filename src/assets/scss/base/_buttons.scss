@@ -29,6 +29,17 @@
 .btn-yred:hover {
   background-color: #cc0000;
 }
+
+.btn-fallbtn {
+  letter-spacing: $letter-spacing;
+  text-transform: uppercase;
+  margin: 2% !important;
+  background-color: $fallbtn;
+}
+
+.btn-fallbtn:hover {
+  background-color: #802000;
+}
 // square modifications
 
 .btn-square {
