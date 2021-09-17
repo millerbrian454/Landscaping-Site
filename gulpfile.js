@@ -56,6 +56,13 @@ const jsPaths = [
             ]
         },
         {
+            dest: 'assets/js/lightbox.js',
+            src: [
+                'src/assets/js/lightbox.js',
+                'src/assets/js/components/**/*.js'
+            ]
+        },
+        {
             dest: 'assets/js/vendor.js',
             src: [
                 'src/assets/js/vendor/modernizr.js',
