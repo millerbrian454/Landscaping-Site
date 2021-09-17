@@ -1,20 +1,20 @@
-const gulp = require('gulp');
-const gulpIf = require('gulp-if');
-const path = require('path');
-const filter = require('gulp-filter');
-const del = require('del');
-const cleanCss = require('gulp-clean-css');
-const htmlmin = require('gulp-htmlmin');
-const mergeStream = require('merge-stream');
-const sass = require('gulp-sass');
-const sourcemaps = require('gulp-sourcemaps');
-const uglify = require('gulp-uglify');
-const postcss = require('gulp-postcss');
-const concat = require('gulp-concat');
-const include = require('gulp-include');
-const server = require('browser-sync').create();
-const imagemin = require('gulp-imagemin');
-const twig = require('gulp-twig');
+const gulp = import('gulp');
+const gulpIf = import('gulp-if');
+const path = import('path');
+const filter = import('gulp-filter');
+const del = import('del');
+const cleanCss = import('gulp-clean-css');
+const htmlmin = import('gulp-htmlmin');
+const mergeStream = import('merge-stream');
+const sass = import('gulp-sass');
+const sourcemaps = import('gulp-sourcemaps');
+const uglify = import('gulp-uglify');
+const postcss = import('gulp-postcss');
+const concat = import('gulp-concat');
+const include = import('gulp-include');
+const server = import('browser-sync').create();
+const imagemin = import('gulp-imagemin');
+const twig = import('gulp-twig');
 
 /**
  * Define development mode flag
@@ -52,13 +52,6 @@ const jsPaths = [
             dest: 'assets/js/app.js',
             src: [
                 'src/assets/js/app.js',
-                'src/assets/js/components/**/*.js'
-            ]
-        },
-        {
-            dest: 'assets/js/lightbox.js',
-            src: [
-                'src/assets/js/lightbox.js',
                 'src/assets/js/components/**/*.js'
             ]
         },
@@ -110,7 +103,7 @@ gulp.task('styles', function () {
             .pipe(sassFilter)
             .pipe(sass({outputStyle: 'nested'}))
             .pipe(sassFilter.restore)
-            .pipe(postcss([require('autoprefixer'), require('postcss-flexbugs-fixes'), require('postcss-object-fit-images')]))
+            .pipe(postcss([import('autoprefixer'), import('postcss-flexbugs-fixes'), import('postcss-object-fit-images')]))
             .pipe(concat(path.basename(current_value.dest)))
             .pipe(gulpIf(!isDev, cleanCss()))
             .pipe(gulpIf(useSourceMaps, sourcemaps.write('.')))
