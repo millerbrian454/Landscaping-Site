@@ -39,6 +39,16 @@
   color: white !important;
 }
 
+.btn-bannerlink {
+  letter-spacing: $letter-spacing;
+  text-transform: uppercase;
+  margin: 2% !important;
+  background-color: $fallbtn;
+  color: white !important;
+}
+.btn-bannerlink:hover{
+  background-color: #802000;
+}
 .btn-fallbtn:hover {
   background-color: #802000;
 }
