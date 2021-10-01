@@ -46,6 +46,10 @@
   .sds-block-foreground-test {
     padding-top: 4% !important;
   }
+  .sds-block-home{
+    margin-top: 5% !important;
+    padding: 2% !important;
+  }
 
   @if $enable-rounded {
     @include border-radius($border-radius);
