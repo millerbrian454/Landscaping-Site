@@ -10,6 +10,11 @@
     padding: map_get($spacers, 20) 0;
   }
 }
+.sds-block-home{
+  margin-top: 5% !important;
+  padding: 2% !important;
+  background-color: #ffc200 !important;
+}
 
 .sds-block-background {
   position: absolute;
@@ -46,11 +51,7 @@
   .sds-block-foreground-test {
     padding-top: 4% !important;
   }
-  .sds-block-home{
-    margin-top: 5% !important;
-    padding: 2% !important;
-    background-color: #ffc200 !important;
-  }
+
 
   @if $enable-rounded {
     @include border-radius($border-radius);
