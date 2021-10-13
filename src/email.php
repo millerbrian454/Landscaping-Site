@@ -11,7 +11,7 @@ if (!$captcha || $response.success == false) {
     exit ;
 } else {
     // Checking For Blank Fields..
-    if ($_POST["first_name"] == "" || $_POST["last_name"] == "" || $_POST["email"] == "" || $_POST["message"] == "" || $_POST["phone"] == "" || $_POST["service"] == "" || $_POST["zip-code"] == "" || $_POST ["exampleCheck2" == ""]) {
+    if ($_POST["first_name"] == "" || $_POST["last_name"] == "" || $_POST["email"] == "" || $_POST["message"] == "" || $_POST["phone"] == "" || $_POST["service"] == "" || $_POST["zip-code"] == "") {
         echo "Fill All Fields..";
     } else {
         // Check if the "Sender's Email" input field is filled out
@@ -26,7 +26,7 @@ if (!$captcha || $response.success == false) {
             $to = 'eyc.landscaping.contact@gmail.com';
             $subject = 'Contact Form Test';
             $message = $_POST['message'];
-            $headers = 'From:' 'eyc@eyc-landscaping.com' . $email . "\r\n";
+            $headers = 'From:' . $email . "\r\n";
             // Sender's Email
             // Message lines should not exceed 70 characters (PHP rule), so wrap it
             $message = wordwrap($message, 70, "\r\n");
