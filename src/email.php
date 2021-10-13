@@ -26,7 +26,7 @@ if (!$captcha || $response.success == false) {
             $to = 'eyc.landscaping.contact@gmail.com';
             $subject = 'Contact Form Test';
             $message = $_POST['message'];
-            $headers = 'From:' . $email . "\r\n";
+            $headers = 'From:' 'eyc@eyc-landscaping.com' . $email . "\r\n";
             // Sender's Email
             // Message lines should not exceed 70 characters (PHP rule), so wrap it
             $message = wordwrap($message, 70, "\r\n");
