@@ -11,7 +11,7 @@ if (!$captcha || $response.success == false) {
     exit ;
 } else {
     // Checking For Blank Fields..
-    if ($_POST["first_name"] == "" || $_POST["last_name"] == "" || $_POST["email"] == "" || $_POST["message"] == "" || $_POST["phone"] == "" || $_POST["service"] == "" || $_POST["zip-code"] == "") {
+    if ($_POST["fullName"] == "" || $_POST["email"] == "" || $_POST["message"] == "" || $_POST["phone"] == "" || $_POST["service"] == "" || $_POST["zip-code"] == "") {
         echo "Fill All Fields..";
     } else {
         // Check if the "Sender's Email" input field is filled out
@@ -23,7 +23,7 @@ if (!$captcha || $response.success == false) {
         if (!$email) {
             echo "Invalid Sender's Email";
         } else {
-            $name = $_POST["first_name"] + " " + $_POST["last_name"];
+            $name = $_POST["fullName"];
             $message = $_POST['message'];
             $email_from = 'eyc@eyc-landscaping.com';//<== update the email address
             $to = "brian.miller676@yahoo.com";//<== update the email address
@@ -33,7 +33,7 @@ if (!$captcha || $response.success == false) {
             $email_body = "You have received a new message from the user $name.\n".
                 "Here is the message:\n $message \n".
 
-            $headers = "From: $email_from \r\n";
+            $headers = "From: $email \r\n";
             $headers .= "Reply-To: $email \r\n";
 
             // Send Mail By PHP Mail Function
