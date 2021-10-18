@@ -23,6 +23,8 @@ if (!$captcha || $response.success == false) {
         if (!$email) {
             echo "Invalid Sender's Email";
         } else {
+            $name = $_POST["first_name"] + " " + $_POST["last_name"];
+            $message = $_POST['message'];
             $email_from = 'eyc@eyc-landscaping.com';//<== update the email address
             $to = "brian.miller676@yahoo.com";//<== update the email address
             $email_subject = "New Form submission";
@@ -32,16 +34,12 @@ if (!$captcha || $response.success == false) {
                 "Here is the message:\n $message \n".
 
             $headers = "From: $email_from \r\n";
-            $headers .= "Reply-To: $visitor_email \r\n";
-
-
-
-            // Sender's Email
+            $headers .= "Reply-To: $email \r\n";
 
             // Send Mail By PHP Mail Function
             if (mail($to,$email_subject,$email_body,$headers)) {
               //done. redirect to thank-you page.
-              header("https://eyc-landscaping.com/index.html");
+              echo "sucess!";
             } else {
                 echo "Failed to send email, try again.";
                 exit ;
