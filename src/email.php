@@ -25,6 +25,7 @@ if (!$captcha || $response.success == false) {
         } else {
             $name = $_POST["fullName"];
             $message = $_POST['message'];
+            $email = $_POST['email'];
             $email_from = 'eyc@eyc-landscaping.com';//<== update the email address
             $to = "brian.miller676@yahoo.com";//<== update the email address
             $email_subject = "New Form submission";
@@ -33,7 +34,7 @@ if (!$captcha || $response.success == false) {
             $email_body = "You have received a new message from the user $name.\n".
                 "Here is the message:\n $message \n".
 
-            $headers = "From: $email \r\n";
+            $headers = "From: $email_from \r\n";
             $headers .= "Reply-To: $email \r\n";
 
             // Send Mail By PHP Mail Function
