@@ -23,16 +23,25 @@ if (!$captcha || $response.success == false) {
         if (!$email) {
             echo "Invalid Sender's Email";
         } else {
-            $to = 'eyc.landscaping.contact@gmail.com';
-            $subject = 'Contact Form Test';
-            $message = $_POST['message'];
-            $headers = 'From:' . $email . "\r\n";
-            // Sender's Email
+            $email_from = 'eyc@eyc-landscaping.com';//<== update the email address
+            $to = "brian.miller676@yahoo.com";//<== update the email address
+            $email_subject = "New Form submission";
             // Message lines should not exceed 70 characters (PHP rule), so wrap it
             $message = wordwrap($message, 70, "\r\n");
+            $email_body = "You have received a new message from the user $name.\n".
+                "Here is the message:\n $message \n".
+
+            $headers = "From: $email_from \r\n";
+            $headers .= "Reply-To: $visitor_email \r\n";
+
+
+
+            // Sender's Email
+
             // Send Mail By PHP Mail Function
-            if (mail($to, $subject, $message, $headers)) {
-                echo "Your mail has been sent successfully!";
+            if (mail($to,$email_subject,$email_body,$headers)) {
+              //done. redirect to thank-you page.
+              header("https://eyc-landscaping.com/index.html");
             } else {
                 echo "Failed to send email, try again.";
                 exit ;
