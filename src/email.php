@@ -34,8 +34,8 @@ if (!$captcha || $response.success == false) {
             $email_subject = "New Form submission";
             // Message lines should not exceed 70 characters (PHP rule), so wrap it
             $message = wordwrap($message, 70, "\r\n");
-            $email_body = "You have received a new message from the customer \n $name.\n Their Email address is: \n $email \n The service they selected is : \n $services \n".
-                "Here is the message:\n $message \n Their phone number is :\n $phoneNum \n Their Zip code is:\n $zip \n".
+            $email_body = "You have received a new message from the customer $name.\n Their Email address is: $email \n Their phone number is : $phoneNum \n Their Zip code is: $zip \n The service they selected is : \n $services \n".
+                "Here is the message:\n $message \n ".
 
             $headers = "From: $email_from \r\n";
             $headers .= "Reply-To: $email \r\n";
