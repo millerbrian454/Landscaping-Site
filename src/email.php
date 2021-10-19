@@ -43,6 +43,7 @@ if (!$captcha || $response.success == false) {
             // Send Mail By PHP Mail Function
             if (mail($to,$email_subject,$email_body,$headers)) {
               //done. redirect to thank-you page.
+              echo '<script>alert("Your message has been sent successfuly!")</script>';
               header("Location: index.html");
               die();
             } else {
