@@ -15,7 +15,7 @@ if (!$captcha || $response.success == false) {
         echo "Fill All Fields..";
     } else {
         // Check if the "Sender's Email" input field is filled out
-        $email = $_POST['email'];
+       $email = $_POST['email'];
         // Sanitize E-mail Address
         $email = filter_var($email, FILTER_SANITIZE_EMAIL);
         // Validate E-mail Address
@@ -33,7 +33,7 @@ if (!$captcha || $response.success == false) {
             $email_subject = "New Form submission";
             // Message lines should not exceed 70 characters (PHP rule), so wrap it
             $message = wordwrap($message, 70, "\r\n");
-            $email_body = "You have received a new message from the user $name.\n".
+            $email_body = "You have received a new message from the user $name.\n Their Email address is: $email \n".
                 "Here is the message:\n $message \n Their phone number is :\n $phoneNum \n Their Zip code is:\n $zip \n".
 
             $headers = "From: $email_from \r\n";
