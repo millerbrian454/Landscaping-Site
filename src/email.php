@@ -25,6 +25,7 @@ if (!$captcha || $response.success == false) {
         } else {
             $name = $_POST["fullName"];
             $message = $_POST['message'];
+            $services = $_POST["service"];
             //$email = $_POST['email'];
             $zip = $_POST["zip-code"];
             $phoneNum = $_POST["phone"];
@@ -33,8 +34,8 @@ if (!$captcha || $response.success == false) {
             $email_subject = "New Form submission";
             // Message lines should not exceed 70 characters (PHP rule), so wrap it
             $message = wordwrap($message, 70, "\r\n");
-            $email_body = "You have received a new message from the user $name.\n Their Email address is: $email \n".
-                "Here is the message:\n $message \n Their phone number is :\n $phoneNum \n Their Zip code is:\n $zip \n".
+            $email_body = "You have received a new message from the user $name.\r\n Their Email address is: $email \r\n The service they are inquring about is :$services \r\n".
+                "Here is the message:\n $message \r\n Their phone number is :\n $phoneNum \r\n Their Zip code is:\n $zip \n".
 
             $headers = "From: $email_from \r\n";
             $headers .= "Reply-To: $email \r\n";
