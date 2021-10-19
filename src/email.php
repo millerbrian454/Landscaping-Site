@@ -42,7 +42,8 @@ if (!$captcha || $response.success == false) {
             // Send Mail By PHP Mail Function
             if (mail($to,$email_subject,$email_body,$headers)) {
               //done. redirect to thank-you page.
-              echo "sucess!";
+              header("Location: index.html");
+              die();
             } else {
                 echo "Failed to send email, try again.";
                 exit ;
