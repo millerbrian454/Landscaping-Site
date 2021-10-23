@@ -13,6 +13,7 @@ if (!$captcha || $response.success == false) {
     // Checking For Blank Fields..
     if ($_POST["fullName"] == "" || $_POST["email"] == "" || $_POST["message"] == "" || $_POST["phone"] == "" || $_POST["service"] == "" || $_POST["zip-code"] == "") {
         header("emptyFields.html");
+        die();
     } else {
         // Check if the "Sender's Email" input field is filled out
        $email = $_POST['email'];
@@ -22,7 +23,7 @@ if (!$captcha || $response.success == false) {
         $email = filter_var($email, FILTER_VALIDATE_EMAIL);
         if (!$email) {
             header("invalidEmail.html");
-
+            die();
         } else {
             $name = $_POST["fullName"];
             $message = $_POST['message'];
