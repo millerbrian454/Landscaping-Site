@@ -12,7 +12,7 @@ if (!$captcha || $response.success == false) {
 } else {
     // Checking For Blank Fields..
     if ($_POST["fullName"] == "" || $_POST["email"] == "" || $_POST["message"] == "" || $_POST["phone"] == "" || $_POST["service"] == "" || $_POST["zip-code"] == "") {
-        echo "Fill All Fields..";
+        header("emptyFields.html");
     } else {
         // Check if the "Sender's Email" input field is filled out
        $email = $_POST['email'];
