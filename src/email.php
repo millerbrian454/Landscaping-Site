@@ -21,8 +21,8 @@ if (!$captcha || $response.success == false) {
         // Validate E-mail Address
         $email = filter_var($email, FILTER_VALIDATE_EMAIL);
         if (!$email) {
-            header("contact.html");
-            echo "Invalid Sender's Email";
+            header("invalidEmail.html");
+
         } else {
             $name = $_POST["fullName"];
             $message = $_POST['message'];
