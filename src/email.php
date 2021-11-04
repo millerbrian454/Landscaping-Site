@@ -30,7 +30,7 @@ if (!$captcha || $response.success == false) {
             $zip = $_POST["zip-code"];
             $phoneNum = $_POST["phone"];
             $email_from = 'eyc@eyc-landscaping.com';//<== update the email address
-            $to = "brian.miller676@yahoo.com";//<== update the email address
+            $to = "eyc.landscaping.contact@gmail.com";//<== update the email address
             $email_subject = "New Form submission";
             // Message lines should not exceed 70 characters (PHP rule), so wrap it
             $message = wordwrap($message, 70, "\r\n");
